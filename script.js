@@ -6,15 +6,6 @@ var bgColor = "#FF6138";
 var animations = [];
 var circles = [];
 
-var addTextToCanvas = function( canvas ) {
-  var context = canvas.getContext("2d");
-  var y = canvas.height - 10;
-  context.fillStyle = "blue";
-  context.font = "bold 20px sans-serif";
-  context.textBaseline = "bottom";
-  context.fillText( "Anne Sannella"+"   "+"Web Creative"+"  "+"Nashville Tennessee", 10, y 
-  return context;  
-};
 
 
 var colorPicker = (function() {
