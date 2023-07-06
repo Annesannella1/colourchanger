@@ -154,6 +154,16 @@ var animate = anime({
     });
   }
 });
+var addTextToCanvas = function( canvas ) {
+  var context = canvas.getContext("2d");
+  var y = canvas.height - 10;
+  context.fillStyle = "blue";
+  context.font = "bold 20px sans-serif";
+  context.textBaseline = "bottom";
+  context.fillText( "Anne Sannella"+"   "+"Web Creative"+"  "+"Nashville Tennessee", 10, y 
+  return context;  
+};
+
 
 var resizeCanvas = function() {
   cW = window.innerWidth;
@@ -205,13 +215,4 @@ function fauxClick(x, y) {
   fauxClick.pageX = x;
   fauxClick.pageY = y;
   document.dispatchEvent(fauxClick);
-}
-var addTextToCanvas = function( canvas ) {
-  var context = canvas.getContext("2d");
-  var y = canvas.height - 10;
-  context.fillStyle = "blue";
-  context.font = "bold 20px sans-serif";
-  context.textBaseline = "bottom";
-  context.fillText( "Anne Sannella"+"   "+"Web Creative"+"  "+"Nashville Tennessee", 10, y 
-  return context;  
 }
