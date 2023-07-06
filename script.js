@@ -150,6 +150,7 @@ var animate = anime({
     ctx.font = '24px Arial';
     ctx.fillStyle = 'FFF';
     ctx.textAlign = 'center';
+    ctx.textBaseLine = 'middle';
     ctx.fillText('Anne Sannella', cW/2, cH/2);
     animations.forEach(function(anim) {
       anim.animatables.forEach(function(animatable) {
