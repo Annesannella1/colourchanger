@@ -147,10 +147,10 @@ var animate = anime({
   update: function() {
     ctx.fillStyle = bgColor;
     ctx.fillRect(0, 0, cW, cH);
-    ctx.font = 'bold 24px cursive';
-    ctx.fillStyle = 'black';
-    ctx.textAlign = 'left';
-    ctx.textBaseLine = 'middle';
+    ctx.font = 'italic 24px tahoma';
+    ctx.fillStyle = 'fushia';
+    ctx.textAlign = 'end';
+    ctx.textBaseLine = 'top';
     ctx.fillText('Anne Sannella', cW/2, cH/2);
     
    
