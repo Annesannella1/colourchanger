@@ -148,10 +148,10 @@ var animate = anime({
     ctx.fillStyle = bgColor;
     ctx.fillRect(0, 0, cW, cH);
     ctx.font = '36px Arial';
-    ctx.fillStyle = 'red';
+    ctx.fillStyle = 'black';
     ctx.textAlign = 'center';
     ctx.textBaseLine = 'middle';
-    ctx.fillText('Anne Sannella', cW/2, cH/2);
+    ctx.fillText('I am so sick of this', cW/2, cH/2);
     
    
     animations.forEach(function(anim) {
