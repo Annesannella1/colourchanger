@@ -149,9 +149,20 @@ var animate = anime({
     ctx.fillRect(0, 0, cW, cH);
     ctx.font = '36px Impact';
     ctx.fillStyle = 'black';
-    ctx.textAlign = 'center';
-    ctx.textBaseLine = 'middle';
-    ctx.fillText('I am so sick of this', 10, 30);
+    ctx.textAlign = "start";   
+    ctx.fillText( "start", 80, 30 );    
+   
+    ctx.textAlign = "end";   
+    ctx.fillText( "end", 80, 60 );    
+   
+    ctx.textAlign = "left";   
+    ctx.fillText( "left", 80, 90 );    
+   
+    ctx.textAlign = "right";   
+    ctx.fillText( "right", 80, 120 );    
+   
+    ctx.textAlign = "center";   
+    ctx.fillText( "center", 80, 150 );
     
    
     animations.forEach(function(anim) {
