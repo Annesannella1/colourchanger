@@ -147,11 +147,11 @@ var animate = anime({
   update: function() {
     ctx.fillStyle = bgColor;
     ctx.fillRect(0, 0, cW, cH);
-    ctx.font = '36px Arial';
+    ctx.font = '36px Impact';
     ctx.fillStyle = 'black';
     ctx.textAlign = 'center';
     ctx.textBaseLine = 'middle';
-    ctx.fillText('I am so sick of this', cW/2, cH/2);
+    ctx.fillText('I am so sick of this', 10, 30);
     
    
     animations.forEach(function(anim) {
