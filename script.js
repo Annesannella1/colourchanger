@@ -150,23 +150,23 @@ var animate = anime({
     ctx.font = '36px Impact';
     ctx.fillStyle = 'black';
     ctx.textAlign = "start";   
-    ctx.fillText( "Anne Sannella", 225, 100 );    
+    ctx.fillText( "Let it hurt", 225, 100 );    
    
     ctx.textAlign = "end"; 
   
-    ctx.fillText( "Web Creative", 225, 200 );    
+    ctx.fillText( "Let it bleed", 225, 200 );    
    
     ctx.textAlign = "left";   
   
-    ctx.fillText( "with", 225, 300 );    
+    ctx.fillText( "Let it heal" , 225, 300 );    
    
     ctx.textAlign = "right";   
   
-    ctx.fillText( "ExperienceDesigns", 225, 400 );    
+    ctx.fillText( "and...", 225, 400 );    
    
     ctx.textAlign = "center";   
   
-    ctx.fillText( "615.753.8194", 225, 500 );
+    ctx.fillText( "Let it go", 225, 500 );
     
    
     animations.forEach(function(anim) {
