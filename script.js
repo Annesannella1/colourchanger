@@ -147,26 +147,26 @@ var animate = anime({
   update: function() {
     ctx.fillStyle = bgColor;
     ctx.fillRect(0, 0, cW, cH);
-    ctx.font = '36px Helvetica, sans-serif';
+    ctx.font = '36px Brush Script';
     ctx.fillStyle = 'black';
     ctx.textAlign = "start";   
       ctx.fillText( "Hurt", cW/2, cH/3 );    
    
     ctx.textAlign = "end"; 
   
-    ctx.fillText( "Bleed", cW/2, cH/2 );    
+    ctx.fillText( "Bleed", cW/2, cH/2.5 );    
    
     ctx.textAlign = "left";   
   
-    ctx.fillText( "Heal" , cW/2, cH/1.5 );    
+    ctx.fillText( "Heal" , cW/2, cH/2 );    
    
     ctx.textAlign = "right";   
   
-    ctx.fillText( "and...", cW/2, cH/.75 );    
+    ctx.fillText( "and...", cW/2, cH/1 );    
    
     ctx.textAlign = "center";   
   
-    ctx.fillText( "Let it go", cW/2, cH/.50 );
+    ctx.fillText( "Let it go", cW/2, cH/.75 );
     
 
     
