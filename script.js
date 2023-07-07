@@ -150,7 +150,27 @@ var animate = anime({
     ctx.font = '36px Impact';
     ctx.fillStyle = 'black';
     ctx.textAlign = "start";   
-    ctx.fillText( "Hurt", 225, 100 );    
+      ctx.fillText( "Hurt", cW/2, cH/.2 );    
+   
+    ctx.textAlign = "end"; 
+  
+    ctx.fillText( "Bleed", cW/2, cH/.5 );    
+   
+    ctx.textAlign = "left";   
+  
+    ctx.fillText( "Heal" , cW/2 cH/1 );    
+   
+    ctx.textAlign = "right";   
+  
+    ctx.fillText( "and...", cW/2, cH/2 );    
+   
+    ctx.textAlign = "center";   
+  
+    ctx.fillText( "Let it go", cW/2, cH/3 );
+    
+
+    
+ /*   ctx.fillText( "Hurt", 225, 100 );    
    
     ctx.textAlign = "end"; 
   
@@ -166,7 +186,7 @@ var animate = anime({
    
     ctx.textAlign = "center";   
   
-    ctx.fillText( "Let it go", 225, 500 );
+    ctx.fillText( "Let it go", 225, 500 ); */
     
    
     animations.forEach(function(anim) {
