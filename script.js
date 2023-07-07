@@ -150,23 +150,23 @@ var animate = anime({
     ctx.font = '36px Impact';
     ctx.fillStyle = 'black';
     ctx.textAlign = "start";   
-    ctx.fillText( "start", 225, 100 );    
+    ctx.fillText( "Anne Sannella", 225, 100 );    
    
     ctx.textAlign = "end"; 
   
-    ctx.fillText( "end", 225, 200 );    
+    ctx.fillText( "Web Creative", 225, 200 );    
    
     ctx.textAlign = "left";   
   
-    ctx.fillText( "left", 225, 300 );    
+    ctx.fillText( "with", 225, 300 );    
    
     ctx.textAlign = "right";   
   
-    ctx.fillText( "right", 225, 400 );    
+    ctx.fillText( "ExperienceDesigns", 225, 400 );    
    
     ctx.textAlign = "center";   
   
-    ctx.fillText( "center", 225, 500 );
+    ctx.fillText( "615.753.8194", 225, 500 );
     
    
     animations.forEach(function(anim) {
