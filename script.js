@@ -148,7 +148,8 @@ var animate = anime({
     ctx.fillStyle = bgColor;
     ctx.fillRect(0, 0, cW, cH);
     ctx.font = '36px Didot';
-    ctx.fillStyle = 'black';
+    ctx.fillStyle = 'red';
+   
     ctx.textAlign = "start";   
       /* ctx.fillText( "Hurt", cW/2, cH/4 );*/  
     ctx.strokeText("HURT", cW/2, cH/4 );
@@ -157,16 +158,16 @@ var animate = anime({
     ctx.textAlign = "end"; 
   
   /*  ctx.fillText( "Bleed", cW/2, cH/3.5 ); */ 
-    ctx.strokeText("BLEAD", cW/2, cH)/3.5 );
+    ctx.strokeText("BLEED", cW/2, cH/3.5 );
    
     ctx.textAlign = "left";   
   
     /* ctx.fillText( "Heal" , cW/2, cH/3 ); */    
-   ctx.strokeText("HEAL", cW/2, cH)/3 );
+   ctx.strokeText("HEAL", cW/2, cH/3 );
     ctx.textAlign = "right";   
   
     /*  ctx.fillText( "and", cW/2, cH/1.75 );*/ 
-    ctx.strokeText("and...", cW/2, cH)/2;
+    ctx.strokeText("and...", cW/2, cH/2 );
     
    
     ctx.textAlign = "center";   
