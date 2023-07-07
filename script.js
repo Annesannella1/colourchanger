@@ -158,7 +158,7 @@ var animate = anime({
    
     ctx.textAlign = "left";   
   
-    ctx.fillText( "Heal" , cW/2 cH/1 );    
+    ctx.fillText( "Heal" , cW/2, cH/1 );    
    
     ctx.textAlign = "right";   
   
