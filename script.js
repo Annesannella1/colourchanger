@@ -150,15 +150,15 @@ var animate = anime({
     ctx.font = '36px Impact';
     ctx.fillStyle = 'black';
     ctx.textAlign = "start";   
-    ctx.fillText( "Let it hurt", 225, 100 );    
+    ctx.fillText( "Hurt", 225, 100 );    
    
     ctx.textAlign = "end"; 
   
-    ctx.fillText( "Let it bleed", 225, 200 );    
+    ctx.fillText( "Bleed", 225, 200 );    
    
     ctx.textAlign = "left";   
   
-    ctx.fillText( "Let it heal" , 225, 300 );    
+    ctx.fillText( "Heal" , 225, 300 );    
    
     ctx.textAlign = "right";   
   
