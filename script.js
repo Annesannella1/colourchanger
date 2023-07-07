@@ -147,7 +147,7 @@ var animate = anime({
   update: function() {
     ctx.fillStyle = bgColor;
     ctx.fillRect(0, 0, cW, cH);
-    ctx.font = '36px Impact';
+    ctx.font = '36px Helvetica, sans-serif';
     ctx.fillStyle = 'black';
     ctx.textAlign = "start";   
       ctx.fillText( "Hurt", cW/2, cH/3 );    
