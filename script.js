@@ -150,23 +150,23 @@ var animate = anime({
     ctx.font = '36px Impact';
     ctx.fillStyle = 'black';
     ctx.textAlign = "start";   
-    ctx.fillText( "start", 160, 60 );    
+    ctx.fillText( "start", 500, 60 );    
    
     ctx.textAlign = "end"; 
   
-    ctx.fillText( "end", 160, 80 );    
+    ctx.fillText( "end", 500, 80 );    
    
     ctx.textAlign = "left";   
   
-    ctx.fillText( "left", 160, 100 );    
+    ctx.fillText( "left", 500, 100 );    
    
     ctx.textAlign = "right";   
   
-    ctx.fillText( "right", 160, 140 );    
+    ctx.fillText( "right", 500, 140 );    
    
     ctx.textAlign = "center";   
   
-    ctx.fillText( "center", 160, 160 );
+    ctx.fillText( "center", 500, 180 );
     
    
     animations.forEach(function(anim) {
