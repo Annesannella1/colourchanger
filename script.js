@@ -147,7 +147,7 @@ var animate = anime({
   update: function() {
     ctx.fillStyle = bgColor;
     ctx.fillRect(0, 0, cW, cH);
-    ctx.font = '36px Comic Sans';
+    ctx.font = '36px Didot';
     ctx.fillStyle = 'black';
     ctx.textAlign = "start";   
       ctx.fillText( "Hurt", cW/2, cH/3 );    
@@ -162,11 +162,11 @@ var animate = anime({
    
     ctx.textAlign = "right";   
   
-    ctx.fillText( "and...", cW/2, cH/2 );    
+    ctx.fillText( "and", cW/2, cH/1.75 );    
    
     ctx.textAlign = "center";   
   
-    ctx.fillText( "Let it go", cW/2, cH/2 );
+    ctx.fillText( "Let it go", cW/2, cH/1.5 );
     
 
     
