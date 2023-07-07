@@ -150,25 +150,29 @@ var animate = anime({
     ctx.font = '36px Didot';
     ctx.fillStyle = 'black';
     ctx.textAlign = "start";   
-      ctx.fillText( "Hurt", cW/2, cH/3 );    
+      /* ctx.fillText( "Hurt", cW/2, cH/4 );*/  
+    ctx.strokeText("HURT", cW/2, cH/4 );
+    
    
     ctx.textAlign = "end"; 
   
-    ctx.fillText( "Bleed", cW/2, cH/2.5 );    
+  /*  ctx.fillText( "Bleed", cW/2, cH/3.5 ); */ 
+    ctx.strokeText("BLEAD", cW/2, cH)/3.5 );
    
     ctx.textAlign = "left";   
   
-    ctx.fillText( "Heal" , cW/2, cH/2 );    
-   
+    /* ctx.fillText( "Heal" , cW/2, cH/3 ); */    
+   ctx.strokeText("HEAL", cW/2, cH)/3 );
     ctx.textAlign = "right";   
   
     /*  ctx.fillText( "and", cW/2, cH/1.75 );*/ 
-    ctx.strokeText("and...", cW/2, cH);
+    ctx.strokeText("and...", cW/2, cH)/2;
     
    
     ctx.textAlign = "center";   
   
-    ctx.fillText( "Let it go", cW/2, cH/.95 );
+   /* ctx.fillText( "Let it go", cW/2, cH );*/
+     ctx.strokeText("LET IT GO!", cW/2, cH );
     
 
     
