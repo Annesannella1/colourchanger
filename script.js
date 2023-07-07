@@ -158,15 +158,15 @@ var animate = anime({
    
     ctx.textAlign = "left";   
   
-    ctx.fillText( "Heal" , cW/2, cH/1 );    
+    ctx.fillText( "Heal" , cW/2, cH/1.5 );    
    
     ctx.textAlign = "right";   
   
-    ctx.fillText( "and...", cW/2, cH/.5 );    
+    ctx.fillText( "and...", cW/2, cH/.75 );    
    
     ctx.textAlign = "center";   
   
-    ctx.fillText( "Let it go", cW/2, cH/.25 );
+    ctx.fillText( "Let it go", cW/2, cH/.50 );
     
 
     
