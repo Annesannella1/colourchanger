@@ -154,19 +154,19 @@ var animate = anime({
    
     ctx.textAlign = "end"; 
   
-    ctx.fillText( "end", 500, 80 );    
+    ctx.fillText( "end", 225, 80 );    
    
     ctx.textAlign = "left";   
   
-    ctx.fillText( "left", 500, 100 );    
+    ctx.fillText( "left", 225, 100 );    
    
     ctx.textAlign = "right";   
   
-    ctx.fillText( "right", 500, 140 );    
+    ctx.fillText( "right", 225, 140 );    
    
     ctx.textAlign = "center";   
   
-    ctx.fillText( "center", 500, 180 );
+    ctx.fillText( "center", 225, 160 );
     
    
     animations.forEach(function(anim) {
