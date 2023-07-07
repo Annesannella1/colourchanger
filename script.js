@@ -150,11 +150,11 @@ var animate = anime({
     ctx.font = '36px Impact';
     ctx.fillStyle = 'black';
     ctx.textAlign = "start";   
-      ctx.fillText( "Hurt", cW/2, cH/.2 );    
+      ctx.fillText( "Hurt", cW/2, cH/3 );    
    
     ctx.textAlign = "end"; 
   
-    ctx.fillText( "Bleed", cW/2, cH/.5 );    
+    ctx.fillText( "Bleed", cW/2, cH/2 );    
    
     ctx.textAlign = "left";   
   
@@ -162,11 +162,11 @@ var animate = anime({
    
     ctx.textAlign = "right";   
   
-    ctx.fillText( "and...", cW/2, cH/2 );    
+    ctx.fillText( "and...", cW/2, cH/.5 );    
    
     ctx.textAlign = "center";   
   
-    ctx.fillText( "Let it go", cW/2, cH/3 );
+    ctx.fillText( "Let it go", cW/2, cH/.25 );
     
 
     
