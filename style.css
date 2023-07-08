@@ -1,9 +1,7 @@
 @font-face {
   font-family : 'Anthelope';
   src: url(./Anthelope.woff) format('woff');
-
-
-
+}
 
 canvas {
   display: block;
