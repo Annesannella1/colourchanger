@@ -147,10 +147,10 @@ var animate = anime({
   update: function() {
     ctx.fillStyle = bgColor;
     ctx.fillRect(0, 0, cW, cH);
-    ctx.font = '36px Didot';
+    ctx.font = '36px Anthelope';
     ctx.fillStyle = 'red';
    
-    ctx.textAlign = "start";   
+    ctx.textAlign = "start"; 
       /* ctx.fillText( "Hurt", cW/2, cH/4 );*/  
     ctx.strokeText("HURT", cW/2, cH/4 );
     
