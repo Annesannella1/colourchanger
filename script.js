@@ -1,11 +1,11 @@
 
      /* Create a new FontFace object */
-     const customFont = new FontFace('CustomFont', 'url(fonts/font.woff)');
+const customFont = new FontFace('Anthelope', 'url(./Anthelope.woff)');
 
   /*   Load the font*/
-   customFont.load().then((font) => {
+   customFont.load().then(Anthelope) => {
   /*     Add the loaded font to the document */
-  document.fonts.add(font);
+  document.fonts.add(Anthelope);
 
    /*   Call a function to render the canvas */
    renderCanvas();
@@ -197,7 +197,7 @@ animations.forEach(function(anim) {
       });
     });
   }
-})};
+});
 
 var resizeCanvas = function() {
   cW = window.innerWidth;
@@ -249,4 +249,4 @@ function fauxClick(x, y) {
   fauxClick.pageX = x;
   fauxClick.pageY = y;
   document.dispatchEvent(fauxClick);
-}
+}}
