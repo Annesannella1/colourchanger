@@ -173,7 +173,7 @@ var animate = anime({
     ctx.textAlign = "center";   
   
    /* ctx.fillText( "Let it go", cW/2, cH );*/
-     ctx.strokeText("LET IT GO!", cW/2, cH );
+     ctx.strokeText("LET IT GO!", cW/2, cH/1.5);
     
 
     
