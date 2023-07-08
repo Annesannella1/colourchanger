@@ -1,11 +1,11 @@
 
      /* Create a new FontFace object */
-const customFont = new FontFace('The Anthelope', 'url(./The Anthelope.woff)');
+const customFont = new FontFace('Anthelope', 'url(./Anthelope.woff)');
 
   /*   Load the font*/
-   customFont.load().then(The Anthelope) => {
+   customFont.load().then(Anthelope) => {
   /*     Add the loaded font to the document */
-  document.fonts.add(The Anthelope);
+  document.fonts.add(Anthelope);
 
    /*   Call a function to render the canvas */
    renderCanvas();
@@ -163,7 +163,7 @@ var animate = anime({
   update: function() {
     ctx.fillStyle = bgColor;
     ctx.fillRect(0, 0, cW, cH);
-    ctx.font = '36px The Anthelope';
+    ctx.font = '36px Anthelope';
     ctx.fillStyle = 'red';
    
     ctx.textAlign = "start"; 
