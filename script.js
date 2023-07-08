@@ -1,10 +1,26 @@
-var c = document.getElementById("c");
-var ctx = c.getContext("2d");
-var cH;
-var cW;
-var bgColor = "#FF6138";
-var animations = [];
-var circles = [];
+
+     /* Create a new FontFace object */
+     const customFont = new FontFace('CustomFont', 'url(fonts/font.woff)');
+
+  /*   Load the font*/
+   customFont.load().then((font) => {
+  /*     Add the loaded font to the document */
+  document.fonts.add(font);
+
+   /*   Call a function to render the canvas */
+   renderCanvas();
+    }).catch((error) => {
+        console.error('Font loading failed', error);
+    });
+
+function renderCanvas() {
+   var c = document.getElementById("c");
+   var ctx = c.getContext("2d");
+   var cH;
+   var cW;
+   var bgColor = "#FF6138";
+   var animations = [];
+   var circles = [];
 
 var colorPicker = (function() {
   var colors = ["#FF6138", "#FFBE53", "#2980B9", "#282741"];
@@ -175,34 +191,13 @@ var animate = anime({
    /* ctx.fillText( "Let it go", cW/2, cH );*/
      ctx.strokeText("LET IT GO!", cW/2, cH/2);
     
-
-    
- /*   ctx.fillText( "Hurt", 225, 100 );    
-   
-    ctx.textAlign = "end"; 
-  
-    ctx.fillText( "Bleed", 225, 200 );    
-   
-    ctx.textAlign = "left";   
-  
-    ctx.fillText( "Heal" , 225, 300 );    
-   
-    ctx.textAlign = "right";   
-  
-    ctx.fillText( "and...", 225, 400 );    
-   
-    ctx.textAlign = "center";   
-  
-    ctx.fillText( "Let it go", 225, 500 ); */
-    
-   
-    animations.forEach(function(anim) {
+animations.forEach(function(anim) {
       anim.animatables.forEach(function(animatable) {
         animatable.target.draw();
       });
     });
   }
-});
+})};
 
 var resizeCanvas = function() {
   cW = window.innerWidth;
