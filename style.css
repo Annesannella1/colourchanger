@@ -1,11 +1,11 @@
 @font-face {
   font-family : 'Anthelope';
-  src: url(./Anthelope.woff) format('woff');
+  src: url('./Anthelope.woff') format('woff');
 }
 
 canvas {
   display: block;
   width: 100vw;
   height: 100vh;
-  font-family : 'Anthelope', sans-serif;
+  font-family: 'Anthelope', sans-serif;
 }
