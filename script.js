@@ -167,13 +167,13 @@ var animate = anime({
     ctx.textAlign = "right";   
   
     /*  ctx.fillText( "and", cW/2, cH/1.75 );*/ 
-    ctx.strokeText("and...", cW/2, cH/2 );
+    ctx.strokeText("and...", cW/2, cH/2.5);
     
    
     ctx.textAlign = "center";   
   
    /* ctx.fillText( "Let it go", cW/2, cH );*/
-     ctx.strokeText("LET IT GO!", cW/2, cH/1.5);
+     ctx.strokeText("LET IT GO!", cW/2, cH/2);
     
 
     
