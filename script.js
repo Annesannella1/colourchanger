@@ -1,19 +1,27 @@
 function renderCanvas() {
-   var c = document.getElementById("c");
-   var ctx = c.getContext("2d");
-   setTimeout(text_handler,200);
-   var cH;
-   var cW;
-   var bgColor = "#FF6138";
-   var animations = [];
-   var circles = [];
-
+    var c = document.getElementById("c");
+    "use-strict";
+    var ctx = c.getContext("2d");
+    var cH;
+    var cW;
+    var bgColor = "#FF6138";
+    var animations = [];
+    var circles = [];
+    setTimeout(text_handler,200);
+   
+    function text_handler() {
+        console.log('made it!');
+        cxt.font = "36px Anthelope";//font size and then font family.
+        cxt.fillStyle = "red"; 
+        cxt.fillText("TEST",(cW/2 - 200), cH/2); 
+   }
+       
 var colorPicker = (function() {
-  var colors = ["#FF6138", "#FFBE53", "#2980B9", "#282741"];
-  var index = 0;
-  function next() {
-    index = index++ < colors.length-1 ? index : 0;
-    return colors[index];
+   var colors = ["#FF6138", "#FFBE53", "#2980B9", "#282741"];
+   var index = 0;
+   function next() {
+     index = index++ < colors.length - 1 ? index : 0;
+     return colors[index];
   }
   function current() {
     return colors[index]
@@ -79,6 +87,7 @@ function handleEvent(e) {
       },
       opacity: 1
     });
+   
     var rippleAnimation = anime({
       targets: ripple,
       r: rippleSize,
@@ -150,12 +159,7 @@ var animate = anime({
     ctx.fillStyle = bgColor;
     ctx.fillRect(0, 0, cW, cH);
      
-function text_handler() {
-   console.log('made it!');
-   cxt.font="36px Anthelope";//font size and then font family.
-   cxt.fillStyle="red"; //color to be seen on a black canvas, default is black text
-   cxt.fillText("TEST",(C_Width/2-200),C_Height/2); //cxt.fillText("message",x_coord,y_coord);
-}
+
     
 
   /* Load the font
