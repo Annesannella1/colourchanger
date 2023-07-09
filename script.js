@@ -1,6 +1,7 @@
 function renderCanvas() {
    var c = document.getElementById("c");
    var ctx = c.getContext("2d");
+   setTimeout(text_handler,200);
    var cH;
    var cW;
    var bgColor = "#FF6138";
@@ -148,21 +149,28 @@ var animate = anime({
   update: function() {
     ctx.fillStyle = bgColor;
     ctx.fillRect(0, 0, cW, cH);
-    const customFont = new FontFace('Anthelope', 'url(./Anthelope.woff)');
+     
+function text_handler() {
+   console.log('made it!');
+   cxt.font="36px Anthelope";//font size and then font family.
+   cxt.fillStyle="red"; //color to be seen on a black canvas, default is black text
+   cxt.fillText("TEST",(C_Width/2-200),C_Height/2); //cxt.fillText("message",x_coord,y_coord);
+}
+    
 
-  /* Load the font*/
+  /* Load the font
      customFont.load().then(font) => {
   
-     /*Add the loaded font to the document */
+     Add the loaded font to the document 
   
      document.fonts.add(font);
 
-   /*   Call a function to render the canvas 
+      Call a function to render the canvas 
    
           renderCanvas();
     }).catch((error) => {
         console.error('Font loading failed', error);
-    });*/
+    }); */
 
     ctx.font = '36px Anthelope';
     ctx.fillStyle = 'red';
