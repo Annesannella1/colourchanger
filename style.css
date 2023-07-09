@@ -8,8 +8,8 @@ canvas {
 
 
 #load {
-    font-family:Anthelope; //necessary to load font with div
-    visibility: hidden; //makes div invisible but the div element forces the text to load before the canvas.
+    font-family:Anthelope; 
+    visibility: hidden;
     height: 0px;
 }
 
