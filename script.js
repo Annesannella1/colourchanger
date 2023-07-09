@@ -1,27 +1,17 @@
-function renderCanvas() {
-    var c = document.getElementById("c");
-    "use-strict";
-    var ctx = c.getContext("2d");
-    var cH;
-    var cW;
-    var bgColor = "#FF6138";
-    var animations = [];
-    var circles = [];
-    setTimeout(text_handler,200);
-   
-    function text_handler() {
-        console.log('made it!');
-        cxt.font = "36px Anthelope";//font size and then font family.
-        cxt.fillStyle = "red"; 
-        cxt.fillText("TEST",(cW/2 - 200), cH/2); 
-   }
-       
+var c = document.getElementById("c");
+var ctx = c.getContext("2d");
+var cH;
+var cW;
+var bgColor = "#FF6138";
+var animations = [];
+var circles = [];
+
 var colorPicker = (function() {
-   var colors = ["#FF6138", "#FFBE53", "#2980B9", "#282741"];
-   var index = 0;
-   function next() {
-     index = index++ < colors.length - 1 ? index : 0;
-     return colors[index];
+  var colors = ["#FF6138", "#FFBE53", "#2980B9", "#282741"];
+  var index = 0;
+  function next() {
+    index = index++ < colors.length-1 ? index : 0;
+    return colors[index];
   }
   function current() {
     return colors[index]
@@ -87,7 +77,6 @@ function handleEvent(e) {
       },
       opacity: 1
     });
-   
     var rippleAnimation = anime({
       targets: ripple,
       r: rippleSize,
@@ -158,28 +147,10 @@ var animate = anime({
   update: function() {
     ctx.fillStyle = bgColor;
     ctx.fillRect(0, 0, cW, cH);
-     
-
-    
-
-  /* Load the font
-     customFont.load().then(font) => {
-  
-     Add the loaded font to the document 
-  
-     document.fonts.add(font);
-
-      Call a function to render the canvas 
-   
-          renderCanvas();
-    }).catch((error) => {
-        console.error('Font loading failed', error);
-    }); */
-
-    ctx.font = '36px Anthelope';
+    ctx.font = '36px Didot';
     ctx.fillStyle = 'red';
    
-    ctx.textAlign = "start"; 
+    ctx.textAlign = "start";   
       /* ctx.fillText( "Hurt", cW/2, cH/4 );*/  
     ctx.strokeText("HURT", cW/2, cH/4 );
     
@@ -204,7 +175,28 @@ var animate = anime({
    /* ctx.fillText( "Let it go", cW/2, cH );*/
      ctx.strokeText("LET IT GO!", cW/2, cH/2);
     
-   animations.forEach(function(anim) {
+
+    
+ /*   ctx.fillText( "Hurt", 225, 100 );    
+   
+    ctx.textAlign = "end"; 
+  
+    ctx.fillText( "Bleed", 225, 200 );    
+   
+    ctx.textAlign = "left";   
+  
+    ctx.fillText( "Heal" , 225, 300 );    
+   
+    ctx.textAlign = "right";   
+  
+    ctx.fillText( "and...", 225, 400 );    
+   
+    ctx.textAlign = "center";   
+  
+    ctx.fillText( "Let it go", 225, 500 ); */
+    
+   
+    animations.forEach(function(anim) {
       anim.animatables.forEach(function(animatable) {
         animatable.target.draw();
       });
@@ -262,4 +254,4 @@ function fauxClick(x, y) {
   fauxClick.pageX = x;
   fauxClick.pageY = y;
   document.dispatchEvent(fauxClick);
-}}
+}
