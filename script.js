@@ -1,18 +1,3 @@
-
-     /* Create a new FontFace object */
-const customFont = new FontFace('Anthelope', 'url(./Anthelope.woff)');
-
-  /*   Load the font*/
-   customFont.load().then(Anthelope) => {
-  /*     Add the loaded font to the document */
-  document.fonts.add(Anthelope);
-
-   /*   Call a function to render the canvas */
-   renderCanvas();
-    }).catch((error) => {
-        console.error('Font loading failed', error);
-    });
-
 function renderCanvas() {
    var c = document.getElementById("c");
    var ctx = c.getContext("2d");
@@ -163,6 +148,22 @@ var animate = anime({
   update: function() {
     ctx.fillStyle = bgColor;
     ctx.fillRect(0, 0, cW, cH);
+    const customFont = new FontFace('Anthelope', 'url(./Anthelope.woff)');
+
+  /* Load the font*/
+     customFont.load().then(font) => {
+  
+     /*Add the loaded font to the document */
+  
+     document.fonts.add(font);
+
+   /*   Call a function to render the canvas 
+   
+          renderCanvas();
+    }).catch((error) => {
+        console.error('Font loading failed', error);
+    });*/
+
     ctx.font = '36px Anthelope';
     ctx.fillStyle = 'red';
    
@@ -191,7 +192,7 @@ var animate = anime({
    /* ctx.fillText( "Let it go", cW/2, cH );*/
      ctx.strokeText("LET IT GO!", cW/2, cH/2);
     
-animations.forEach(function(anim) {
+   animations.forEach(function(anim) {
       anim.animatables.forEach(function(animatable) {
         animatable.target.draw();
       });
