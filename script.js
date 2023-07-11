@@ -152,7 +152,7 @@ var animate = anime({
    
     ctx.textAlign = "start";   
       /* ctx.fillText( "Hurt", cW/2, cH/4 );*/  
-    ctx.setTransform(0.5, 0, 0, 1, 0, 0); 
+    ctx.Transform(0.5, 0, 0, 1, 0, 0); 
     ctx.strokeText("HURT", cW/2, cH/4 );
     
    
