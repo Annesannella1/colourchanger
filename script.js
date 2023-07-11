@@ -152,6 +152,7 @@ var animate = anime({
    
     ctx.textAlign = "start";   
       /* ctx.fillText( "Hurt", cW/2, cH/4 );*/  
+    ctx.setTransform(1, 0, 0, 0.5, 0, 0); 
     
     ctx.strokeText("HURT", cW/2, cH/4 );
     
@@ -159,7 +160,7 @@ var animate = anime({
     ctx.textAlign = "end"; 
   
   /*  ctx.fillText( "Bleed", cW/2, cH/3.5 ); */ 
-    ctx..rotate((45 * Math.PI) / 180);
+    
     
     ctx.strokeText("BLEED", cW/2, cH/3.5 );
    
