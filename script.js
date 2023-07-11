@@ -159,6 +159,8 @@ var animate = anime({
     ctx.textAlign = "end"; 
   
   /*  ctx.fillText( "Bleed", cW/2, cH/3.5 ); */ 
+    ctx..setTransform(1, 0, 0, 0.5, 0, 0); 
+    
     ctx.strokeText("BLEED", cW/2, cH/3.5 );
    
     ctx.textAlign = "left";   
