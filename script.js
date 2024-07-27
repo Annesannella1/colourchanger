@@ -167,7 +167,7 @@ var animate = anime({
     ctx.textAlign = "left";   
   
     /* ctx.fillText( "Heal" , cW/2, cH/3 ); */    
-   ctx.strokeText( "RECYCLE", cW/2, cH/3 );
+   ctx.strokeText( "REuse", cW/2, cH/3 );
     ctx.textAlign = "right";   
   
     /*  ctx.fillText( "and", cW/2, cH/1.75 );*/ 
