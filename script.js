@@ -162,7 +162,7 @@ var animate = anime({
   /*  ctx.fillText( "B", cW/2, cH/3.5 ); */ 
     
     
-    ctx.strokeText( "LIVE", cw/2, cH/3.5 );
+    ctx.strokeText( "LIVE", cW/2, cH/3.5 );
    
     ctx.textAlign = "left";   
   
