@@ -171,7 +171,7 @@ var animate = anime({
     ctx.textAlign = "right";   
   
     /*  ctx.fillText( "and", cW/2, cH/1.75 );*/ 
-    ctx.strokeText("all things", cW/2, cH/2.5);
+    ctx.strokeText("all...", cW/2, cH/2.5);
     
    
     ctx.textAlign = "center";   
