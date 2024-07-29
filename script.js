@@ -154,7 +154,7 @@ var animate = anime({
       /* ctx.fillText( "Hurt", cW/2, cH/4 );*/  
     
   /*  ctx.setTransform(0.5, 0, 0, 1, 0, 0); */
-    ctx.strokeText( "BUY", cW/2, cH/4 );
+    ctx.strokeText( "NO", cW/2, cH/4 );
     
    
     ctx.textAlign = "end"; 
@@ -162,22 +162,22 @@ var animate = anime({
   /*  ctx.fillText( "B", cW/2, cH/3.5 ); */ 
     
     
-    ctx.strokeText( "USE", cW/2, cH/3.5 );
+    ctx.strokeText( "NEWS", cW/2, cH/3.5 );
    
     ctx.textAlign = "left";   
   
     /* ctx.fillText( "Heal" , cW/2, cH/3 ); */    
-   ctx.strokeText( "RECYCLE", cW/2, cH/3 );
+   ctx.strokeText( "IS", cW/2, cH/3 );
     ctx.textAlign = "right";   
   
     /*  ctx.fillText( "and", cW/2, cH/1.75 );*/ 
-    ctx.strokeText( "all...", cW/2, cH/2.5);
+    ctx.strokeText( "always...", cW/2, cH/2.5);
     
    
     ctx.textAlign = "center";   
   
    /* ctx.fillText( "Let it go", cW/2, cH );*/
-    ctx.strokeText( "PAPER PRODUCTS!", cW/2, cH/2);
+    ctx.strokeText( "GOOD NEWS!", cW/2, cH/2);
 
     animations.forEach(function(anim) {
       anim.animatables.forEach(function(animatable) {
